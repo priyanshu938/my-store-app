@@ -19,7 +19,7 @@ export default function App() {
             <Items
            
               name="Oreo"
-              img="../images/1.jpg"
+              img="../public/images/1.jpg"
               price="Rs 20"
               count={oreo}
               inc={incrementOreo}
@@ -31,7 +31,7 @@ export default function App() {
             key="2"
             id="2"
               name="5 Star Bites"
-              img="../images/2.jpg"
+              img="../public/images/2.jpg"
               price="Rs 25"
               count={five_star}
               inc={incrementFive}
@@ -43,7 +43,7 @@ export default function App() {
             key="3"
             id="3"
               name="Dark Fantasy"
-              img="../images/3.jpg"
+              img="../public/images/3.jpg"
               price="Rs 30"
               count={dark}
               inc={incrementDark}
