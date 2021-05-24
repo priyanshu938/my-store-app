@@ -4,7 +4,9 @@ import Items from "../src/components/Items";
 import Footer from "../src/components/Footer";
 import { useSelector } from "react-redux";
 import { incrementOreo, decrementOreo,incrementFive,decrementFive,incrementDark,decrementDark } from "./actions/index";
-
+import img1 from "../src/images/1.jpg"
+import img2 from "../src/images/2.jpg"
+import img3 from "../src/images/3.jpg"
 export default function App() {
   const oreo = useSelector((state) => state.oreo);
   const five_star = useSelector((state) => state.five_star);
@@ -19,7 +21,7 @@ export default function App() {
             <Items
            
               name="Oreo"
-              img="../public/images/1.jpg"
+              img={img1}
               price="Rs 20"
               count={oreo}
               inc={incrementOreo}
@@ -28,10 +30,9 @@ export default function App() {
           </div>
           <div class="col">
             <Items
-            key="2"
-            id="2"
+           
               name="5 Star Bites"
-              img="../public/images/2.jpg"
+              img={img2}
               price="Rs 25"
               count={five_star}
               inc={incrementFive}
@@ -40,10 +41,9 @@ export default function App() {
           </div>
           <div class="col">
             <Items
-            key="3"
-            id="3"
+           
               name="Dark Fantasy"
-              img="../public/images/3.jpg"
+              img={img3}
               price="Rs 30"
               count={dark}
               inc={incrementDark}

@@ -13,7 +13,7 @@ export default function Items(props) {
   return (
     <>
      <div className="card my-2" style={customStyle}>
-  <img src={props.img} style={imgStyle} className="card-img-top" alt="..." />
+  <img src={props.img}style={imgStyle} className="card-img-top" alt="..." />
   <div className="card-body">
     <h5 className="card-title">{props.name}</h5>
     <p><b>{props.price}</b></p>
